@@ -1,6 +1,8 @@
 import React from "react";
 import AvatarImg from '../assets/Avatar.jpg';
 import upload from "../assets/upload.jpg";
+import { Link } from "react-router-dom";
+
 
 const Form = () => {
   return (
@@ -65,9 +67,11 @@ const Form = () => {
       </div>
       <div className="flex justify-between items-center mb-6">
         <div className="rounded-lg">
+        <Link to="/">
           <button className="px-4 py-2.5 bg-white rounded-lg shadow border border-gray-300 text-slate-700 font-semibold">
             Cancel
           </button>
+          </Link>
         </div>
         <div className="rounded-lg">
           <button className="px-4 py-2.5 bg-red-500 rounded-lg shadow border border-red-500 text-white font-semibold">
